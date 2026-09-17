@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4dfbd;
+  color: #17130f;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 .header {
   display: flex;
   align-items: center;
@@ -29,7 +48,826 @@
   box-shadow: 4px 6px 2px rgba(150, 60, 35, 0.35);
 }
 
-.menu1:hover {
+.section-line2 {
+  width: 100vw;
+  height: 1px;
+
+  margin-left: calc(50% - 50vw);
+
+  background-color: #d94c2f;
+}
+.header a:hover {
   background-color: #b94728;
   color: #fff;
+}
+
+/* Burger og mobilmenu er skjult på desktop */
+
+.burger,
+.mobile-menu {
+  display: none;
+}
+.hero {
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 540px;
+  height: 340px;
+  background-color: #f6b43f;
+  border-radius: 50%;
+  top: 80px;
+}
+
+section:has(.tern) {
+  overflow: hidden;
+}
+
+.tern {
+  width: 150em;
+  max-width: none;
+  display: block;
+}
+.hero h1 {
+  position: relative;
+  z-index: 2;
+  font-family: Arial, sans-serif;
+  font-size: 130px;
+  color: #f7e5c9;
+  -webkit-text-stroke: 2px #d95132;
+  text-shadow: 2px 2px 0 #d95132;
+}
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  margin: 50px;
+  width: 100%;
+  height: 650px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* TEKSTBOKSEN */
+
+.about-text {
+  position: absolute;
+  opacity: 80%;
+  left: 8%;
+  top: 3em;
+  height: 100em;
+  width: 50%;
+
+  background-color: #edc1a5;
+
+  padding: 70px 4%;
+
+  z-index: 3;
+}
+
+/* OVERSKRIFT */
+
+.about h2 {
+  color: #d95132;
+  opacity: 100%;
+  font-size: 40px;
+  font-style: italic;
+
+  margin: 0 0 40px 0;
+}
+
+/* TEKST */
+
+.about p {
+  font-size: 17px;
+  line-height: 1.5;
+  opacity: 100%;
+  margin: 0 0 px 0;
+}
+
+/* BILLEDER */
+
+.about-images {
+  position: absolute;
+
+  left: 55%;
+  top: 0;
+
+  width: 40%;
+  height: 600px;
+
+  z-index: 1;
+}
+
+/* STORE BILLEDE */
+
+.about-images img:first-child {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 75%;
+  height: 570px;
+
+  object-fit: cover;
+
+  z-index: 1;
+}
+
+/* LILLE BILLEDE */
+
+.about-images img:last-child {
+  position: absolute;
+
+  left: 75%;
+  top: 45px;
+
+  width: 30%;
+  height: 470px;
+
+  object-fit: cover;
+
+  z-index: 2;
+}
+/* ---------------- DOMMERE ---------------- */
+
+.judges {
+  min-height: 300px;
+  background-color: #d95132;
+
+  display: flex;
+  align-items: center;
+
+  padding: 30px 8%;
+  color: #fff;
+
+  position: relative;
+}
+
+.judge-images {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.judge-content {
+  width: 60%;
+  margin-left: 5%;
+  line-height: 3;
+}
+
+.judge-content h2 {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.judge-content p {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.judge-content ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+.judge-content li {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.judge-content li::before {
+  content: "→";
+  margin-right: 10px;
+}
+
+.camera {
+  transform: scale(0.9);
+}
+.judge-mobile {
+  display: none;
+}
+
+/* ---------------- FILMSTRIBE ---------------- */
+
+.filmstrip {
+  margin-top: -2.5em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.filmstrip img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.6;
+  transform: scaleY(0.7);
+}
+
+/* ---------------- SPONSORER ---------------- */
+
+.sponsors {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 45px 8%;
+  margin-top: -2em;
+}
+
+.week {
+  width: 70px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.week span {
+  color: #b7462c;
+  font-size: 27px;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.sponsor-text {
+  width: 55%;
+  padding-left: 60px;
+  position: relative;
+}
+
+.sponsor-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  height: 300px;
+  width: 1px;
+  background-color: #80685b;
+}
+.sponsor-text h2 {
+  margin-bottom: 30px;
+  color: #b7462c;
+  font-size: 2em;
+}
+
+.sponsor-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.ek {
+  margin-left: auto;
+  color: #b7462c;
+  display: flex;
+  flex-direction: column;
+}
+
+.ek strong {
+  font-family: Arial, sans-serif;
+  font-size: 80px;
+  line-height: 70px;
+}
+
+.ek small {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+
+  .header {
+    position: relative;
+    z-index: 9999;
+
+    padding: 18px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+  }
+
+  .header-logo img {
+    width: 105px;
+  }
+
+  /* Skjul desktop-navigation */
+
+  .header-nav,
+  .info-button {
+    display: none !important;
+  }
+
+  /* =========================
+     BURGER
+  ========================= */
+
+  .burger {
+    display: flex;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 7px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    background: transparent;
+    border: 2px solid #b94728;
+
+    cursor: pointer;
+
+    box-shadow: 3px 4px 2px rgba(150, 60, 35, 0.25);
+
+    z-index: 1001;
+  }
+
+  .burger span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: #b94728;
+
+    transition: 0.25s ease;
+  }
+
+  /* Burger bliver til X */
+
+  .burger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* =========================
+     MOBILE MENU
+  ========================= */
+  .mobile-menu {
+    position: absolute;
+
+    top: 100%;
+    right: 16px;
+
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f4dfbd;
+
+    border: 2px solid #b94728;
+
+    box-shadow: 4px 6px 2px rgba(150, 60, 35, 0.25);
+
+    z-index: 10000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: 0.25s ease;
+  }
+
+  .mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+  /* Menu links */
+
+  .mobile-menu a {
+    display: block;
+
+    width: 100%;
+
+    padding: 16px 18px;
+
+    color: #d35432;
+    background-color: #f4dfbd;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    border-bottom: 1px solid #b94728;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #b94728;
+    color: #fff;
+  }
+  /* =========================
+   MOBILE – INDHOLD EFTER HEADER
+========================= */
+
+  .hero {
+    width: 100%;
+    height: 300px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+  }
+
+  .hero-circle {
+    width: 330px;
+    height: 210px;
+
+    top: 45px;
+
+    background-color: #f6b43f;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    font-size: 55px;
+    line-height: 1;
+
+    text-align: center;
+
+    color: #f7e5c9;
+
+    -webkit-text-stroke: 1.5px #d95132;
+    text-shadow: 2px 2px 0 #d95132;
+  }
+
+  /* =========================
+   TERN
+========================= */
+
+  section:has(.tern) {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tern {
+    width: 700px;
+    max-width: none;
+
+    display: block;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* =========================
+   ABOUT
+========================= */
+
+  .about {
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 45px 20px 60px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* TEKSTBOKS */
+
+  .about-text {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+    height: auto;
+
+    padding: 35px 25px 40px;
+
+    background-color: #edc1a5;
+
+    z-index: 3;
+  }
+
+  .about h2 {
+    margin: 0 0 25px;
+
+    color: #d95132;
+
+    font-size: 32px;
+    line-height: 1.1;
+
+    font-style: italic;
+  }
+
+  .about p {
+    margin: 0 0 18px;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .about p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* BILLEDER */
+
+  .about-images {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+    height: 390px;
+
+    margin-top: 25px;
+
+    z-index: 1;
+  }
+
+  /* STORT BILLEDE */
+
+  .about-images img:first-child {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 82%;
+    height: 320px;
+
+    object-fit: cover;
+
+    z-index: 1;
+  }
+
+  /* LILLE BILLEDE */
+
+  .about-images img:last-child {
+    position: absolute;
+
+    left: 58%;
+    top: 70px;
+
+    width: 38%;
+    height: 260px;
+
+    object-fit: cover;
+
+    z-index: 2;
+  }
+
+  /* =========================
+   DOMMERE
+========================= */
+
+  .judges {
+    width: 100%;
+    min-height: auto;
+
+    padding: 50px 20px 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    position: relative;
+  }
+
+  /* DOMMERBILLEDE */
+
+  .judge-images {
+    width: 50%;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .judge-images img {
+    display: none;
+  }
+  .judge-mobile {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+  /* TEKST */
+
+  .judge-content {
+    width: 100%;
+    margin-left: 0;
+    line-height: 1.5;
+  }
+
+  .judge-content h2 {
+    margin: 0 0 20px;
+    margin-left: 1.8em;
+    font-size: 30px;
+  }
+
+  .judge-content p {
+    margin: 0 0 15px;
+    margin-left: 3em;
+    font-size: 17px;
+  }
+
+  .judge-content ul {
+    margin: 3em;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .judge-content li {
+    position: relative;
+
+    margin-bottom: 14px;
+    padding-left: 28px;
+
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .judge-content li::before {
+    content: "→";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* KAMERA */
+
+  .camera {
+    width: 100%;
+    margin-left: -2em;
+    margin-top: -2em;
+    display: flex;
+    justify-content: center;
+    transform: none;
+  }
+
+  .camera img {
+    width: 75%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  /* =========================
+   FILMSTRIBE
+========================= */
+
+  .filmstrip {
+    width: 100%;
+
+    margin-top: -10px;
+
+    overflow: hidden;
+  }
+
+  .filmstrip img {
+    width: 180%;
+    max-width: none;
+
+    height: auto;
+
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%) scaleY(0.75);
+
+    opacity: 0.6;
+  }
+
+  /* =========================
+   SPONSORER
+========================= */
+
+  .sponsors {
+    width: 100%;
+    min-height: auto;
+
+    margin: 0;
+
+    padding: 50px 20px 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 30px;
+  }
+
+  /* 22-BILLEDE */
+
+  .week {
+    display: none;
+  }
+
+  /* SPONSOR TEKST */
+
+  .sponsor-text {
+    width: 100%;
+    padding-left: 25px;
+    position: relative;
+  }
+
+  .sponsor-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #80685b;
+  }
+
+  .sponsor-text h2 {
+    margin: 0 0 20px;
+
+    color: #b7462c;
+
+    font-size: 30px;
+  }
+
+  .sponsor-text p {
+    margin: 0 0 16px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* EK */
+
+  .ek {
+    width: 100%;
+    margin: 5px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .ek img {
+    width: 200px;
+    height: auto;
+  }
 }
