@@ -1,7 +1,7 @@
-const burgerBtn = document.getElementById("burger-btn");
-const headerNav = document.getElementById("header-nav");
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-burgerBtn.addEventListener("click", () => {
-  burgerBtn.classList.toggle("active");
-  headerNav.classList.toggle("active");
+burger.addEventListener("click", function () {
+  burger.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
 });

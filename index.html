@@ -1,13 +1,72 @@
 <!doctype html>
 <html lang="da">
+  <head>
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-</head>
+  </head>
 
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="grafik/logo.png" alt="Instant Ugen" />
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+      </nav>
+
+      <a href="info.html" class="info-button">INFO</a>
+
+      <!-- BURGER -->
+      <button class="burger" id="burger" aria-label="Åbn menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MOBILE MENU -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+        <a href="info.html">INFO</a>
+      </nav>
+    </header>
+
+    <footer class="footer">
+      <!-- ØVERSTE ORANGE DEL -->
+
+      <div class="footer-top">
+        <div class="footer-content">
+          <div class="footer-text">
+            <h2>INSTANT UGEN 2026</h2>
+
+            <h3>12-18 oktober</h3>
+
+            <p>En uge fyldt med instants fotos</p>
+          </div>
+
+          <a href="info.html" class="footer-info-button"> INFO </a>
+        </div>
+      </div>
+
+      <!-- NEDERSTE BEIGE DEL -->
+
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="#" aria-label="Email">
+            <img src="grafik/mail.svg" alt="Email" />
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <img src="grafik/insta.svg" alt="Instagram" />
+          </a>
 <body>
     <main>
         <section class="hero">
@@ -193,4 +252,16 @@
     </main>
 </body>
 
+          <a href="#" aria-label="Facebook">
+            <img src="grafik/facebook.svg" alt="Facebook" />
+          </a>
+        </div>
+
+        <div class="footer-logo">
+          <img src="grafik/logo.png" alt="Instant Ugen" />
+        </div>
+      </div>
+    </footer>
+    <script src="burger.js"></script>
+  </body>
 </html>
