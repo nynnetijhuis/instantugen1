@@ -1,32 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="instants.css">
-    <title>Document</title>
+    <title>Dine Instants</title>
 </head>
 
 <body>
+
     <header class="header">
+
         <div class="header-logo">
             <a href="index.html">
                 <img src="grafik/logo.png" alt="logo">
             </a>
         </div>
 
+        <!-- Burger knap -->
+        <button class="burger-btn" id="burger-btn" aria-label="Åbn menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <nav class="header-nav">
+        <nav class="header-nav" id="header-nav">
             <a class="menu1" href="instants.html">DINE INSTANTS</a>
             <a class="menu1" href="konkurrence.html">KONKURRENCE</a>
-
+            <a href="info.html" class="info-button mobile-info">INFO</a>
         </nav>
 
+        <a href="info.html" class="info-button desktop-info">INFO</a>
 
-
-        <a href="info.html" class="info-button">INFO</a>
     </header>
+
+
+    <main>
+
+        <!-- FØRSTE SEKTION -->
+
+        <section class="instants">
+
+            <h1>Dine instants</h1>
+
+            <div class="instants-grid">
+
+                <div class="instant-billede">
+
+                    <img class="tape" src="image/tape.png" alt="">
+
+                    <img src="image/img9.webp" alt="Instant billede">
+
+                </div>
+
+
+                <div class="steps">
+
+                    <h2>Sådan deltager du</h2>
+
+                    <div class="step">
+                        <span>1</span>
+                        <p>
+                            Tag et billede af dit instant foto med din smartphone
+                            (eller scan det for den bedste kvalitet) - filen skal
+                            være mellem 2-10 MB, i jpg/jpeg- eller webp-format.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <span>2</span>
+                        <p>
+                            Upload dit billede og dit navn + kontaktinfo på
+                            [link til din “del dine instants”-side]
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <span>3</span>
+                        <p>
+                            Accepter vilkår og betingelser for konkurrencen.
+                            Deltagere skal være over 18 år, portrætterede personer
+                            skal have givet samtykke, og du accepterer, at dit
+                            instant foto må bruges til at promovere konkurrencen.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <span>4</span>
+                        <p>
+                            Du kan indsende op til 5 bidrag - gennemgå trin 1-3
+                            for hver indsendelse ;-)
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- UPLOAD SEKTION -->
+
+        <section class="upload">
+
+            <div class="upload-container">
+
+                <div class="upload-content">
+
+                    <h2>Upload dit billede</h2>
+
+                    <p>
+                        Udfyld formularen herunder for at deltage i konkurrencen
+                    </p>
+
+                    <form>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="navn">FULDE NAVN *</label>
+                                <input type="text" id="navn" placeholder="Dit fulde navn">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-MAIL *</label>
+                                <input type="email" id="email" placeholder="Din E-mail">
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="billede">UPLOAD BILLEDE *</label>
+                            <input type="file" id="billede">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="titel">TITEL PÅ DIN INSTANT *</label>
+                            <input type="text" id="titel" placeholder="Skriv en kort titel">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="beskrivelse">
+                                BESKRIVELSE BAG DIN INSTANT *
+                            </label>
+
+                            <textarea id="beskrivelse"
+                                placeholder="Fortæl os om billedet og hvordan du tog det.."></textarea>
+                        </div>
+
+
+                        <label class="checkbox">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Jeg har læst og accepterer vilkårene og betingelserne
+                            </span>
+
+                        </label>
+
+
+                        <button type="submit">
+                            SEND INDSENDELSE
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- GRAFIKKER I HØJRE SIDE -->
+                <div class="upload-grafik-side">
+                    <img class="upload-kamera" src="grafik/kamera.png" alt="Kamera">
+                    <img class="upload-skrift" src="grafik/skrift.png" alt="Del dine instants">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VILKÅR OG BETINGELSER SEKTION -->
+
+        <section class="terms-section">
+
+            <div class="terms-grid">
+
+                <div class="terms-billede">
+
+                    <img src="image/img11.webp" alt="Instant foto">
+
+                </div>
+
+
+                <div class="terms-content">
+
+                    <h2>VILKÅR OG BETINGELSER</h2>
+
+                    <p class="terms-sub">
+                        Ved at deltage i konkurrencen accepterer du følgende
+                        vilkår og betingelser
+                    </p>
+
+
+                    <div class="accordion">
+
+                        <details class="accordion-item">
+
+                            <summary>DELTAGELSE</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Konkurrencen er åben for alle fotografer, både
+                                    amatører og professionelle, der er over 18 år.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>INSTANT FOTO</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Hver indsendelse skal være et analogt instant-foto -
+                                    ikke en digital montage lavet i et fotoredigeringsprogram.
+                                    Instant-fotoet kan laves på forskellige måder; med analoge
+                                    instant-kameraer, digitale instant-kameraer som f.eks.
+                                    Fujifilm EVO eller scan-og-print-udstyr som f.eks. Polaroid Lab.
+                                    Instant-fotoet må gerne manipuleres med analoge processer -
+                                    arrangørerne opfordrer til at eksperimentere med instant
+                                    fotografering. Indsendelsen kan skildre instant-fotoet på
+                                    mange måder: Som en flad scanning med eller uden instant-rammen,
+                                    som et foto, der viser instantet i en ramme, på væggen osv.
+                                    Instant-fotoet behøver ikke kun at være ét foto: Det kan være
+                                    et panorama eller en collage af flere instants, der udgør én
+                                    indsendelse. Så der er en vis kunstnerisk frihed ;-)
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>SAMTYKKE</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Det er ikke tilladt at uploade fotografier af personer,
+                                    der ikke har givet samtykke til offentliggørelsen af billedet.
+                                    Billeder af personer i private eller pinlige situationer,
+                                    uanset om de er fotograferet på et offentligt sted, er ikke
+                                    tilladt.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>JURIDISKE ASPEKTER</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Arrangørerne forbeholder sig retten til at diskvalificere
+                                    enhver deltager, der overtræder disse betingelser.
+                                    Arrangørerne påtager sig intet ansvar for tab, skade eller
+                                    personskade, der måtte opstå som følge af deltagelse i
+                                    konkurrencen eller brug af præmier. Deltagerne fritager
+                                    arrangørerne for ethvert krav, søgsmål eller ansvar i
+                                    forbindelse med deres deltagelse i konkurrencen.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>ANTAL BIDRAG</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Du kan deltage i konkurrencen med i alt fem bidrag.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>BRUGSRETTIGHEDER</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Ved at indsende et eller flere billeder og dermed
+                                    deltage i konkurrencen accepterer du, at billedet må
+                                    bruges til promovering af fotokonkurrencen og muligvis
+                                    i fysiske udstillingslokaler bagefter. Arrangørerne vil
+                                    kreditere deltagerne, hvor det er praktisk og rimeligt muligt.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>OPHAVSRET</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Du skal være fotografen af de indsendte instant fotos
+                                    samt have rettighederne til at offentliggøre dem.
+                                    Billederne skal være fri for tredjepartsrettigheder.
+                                    Som deltager beholder du ophavsretten til de indsendte
+                                    fotos. Ved at indsende fotos til konkurrencen giver du
+                                    arrangørerne en ikke-eksklusiv licens til at bruge,
+                                    reproducere og offentliggøre de indsendte fotos i
+                                    forbindelse med promoveringen af konkurrencen,
+                                    herunder på sociale medieplatforme, hjemmesider og
+                                    i trykte materialer. Arrangørerne vil kreditere
+                                    deltagerne, hvor det er praktisk og rimeligt.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+                        <details class="accordion-item">
+
+                            <summary>ANNONCERING AF VINDERENE</summary>
+
+                            <div class="accordion-content">
+
+                                <p>
+                                    Vinderne af konkurrencen vil blive annonceret på
+                                    Instant Ugens officielle hjemmeside og/eller sociale
+                                    medieplatforme. Ved at deltage i konkurrencen giver
+                                    du samtykke til offentliggørelse af navn samt at
+                                    indsendte fotos bruges til markedsføring af konkurrencen.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TAK SEKTION -->
+
+        <section class="tak-section">
+
+            <img class="knappenaal" src="grafik/knappenål.png" alt="">
+
+            <div class="tak-content">
+
+                <img class="skrift2" src="grafik/skrift2.png" alt="">
+
+                <h2>TAK!</h2>
+
+                <p class="tak-intro">
+                    Du er en instant champ! Tak for bidraget :-)
+                </p>
+
+                <p>
+                    Konkurrencen løber indtil den søndag d. 5. april.
+                    Kort efter gennemgår vi alle billederne og annoncerer
+                    en vinder den 1. maj.
+                </p>
+
+                <p>
+                    Hvis du er en af de heldige vindere eller nominerede,
+                    kontakter vi dig via e-mail.
+                </p>
+
+                <h3>Held og lykke</h3>
+
+                <p class="tak-small-text">
+                    NB! Vil du indsende endnu et bidrag? Du kan
+                    sende op til 5 billeder ovenfor
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- ØVERSTE ORANGE DEL -->
+
+        <div class="footer-top">
+
+            <div class="footer-content">
+
+                <div class="footer-text">
+
+                    <h2>INSTANT UGEN 2026</h2>
+
+                    <h3>12-18 oktober</h3>
+
+                    <p>En uge fyldt med instants fotos</p>
+
+                </div>
+
+
+                <a href="info.html" class="footer-info-button">
+                    INFO
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEDERSTE BEIGE DEL -->
+
+        <div class="footer-bottom">
+
+            <div class="footer-socials">
+
+                <a href="#" aria-label="Email">
+                    <img src="grafik/mail.svg" alt="Email">
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <img src="grafik/insta.svg" alt="Instagram">
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <img src="grafik/facebook.svg" alt="Facebook">
+                </a>
+
+            </div>
+
+
+            <div class="footer-logo">
+
+                <img src="grafik/logo.png" alt="Instant Ugen">
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="burger.js"></script>
+
 </body>
 
 </html>
