@@ -1,35 +1,905 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 30px 55px;
-  background-color: #f4dfbd;
+* {
+  box-sizing: border-box;
 }
 
-.header-logo img {
-  width: 160px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+
+  background-color: #f6e2c7;
 }
 
-.header-nav {
-  display: flex;
-  gap: 16px;
+body {
+  overflow-x: hidden;
 }
 
-.header-nav a,
-.info-button {
-  padding: 10px 24px;
-
-  border: 3px solid #b94728;
-
-  color: #d35432;
-  text-decoration: none;
-  font-weight: bold;
-
-  box-shadow: 4px 6px 2px rgba(150, 60, 35, 0.35);
+main {
+  width: 100%;
+  background-color: #f6e2c7;
 }
 
 .menu1:hover {
   background-color: #b94728;
   color: #fff;
+}
+.hero {
+  position: relative;
+
+  width: 100%;
+  height: 560px;
+
+  background-image: url("image/heroimg.webp");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  height: 390px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 95px;
+  line-height: 0.95;
+
+  color: #f6dfbd;
+  -webkit-text-stroke: 3px #cf4e2e;
+}
+
+.hero h2 {
+  margin: 10px 0 0;
+
+  font-size: 40px;
+  line-height: 1;
+
+  color: #f6dfbd;
+  -webkit-text-stroke: 2px #cf4e2e;
+}
+
+.hero p {
+  margin: auto 0 15px;
+
+  font-size: 22px;
+  color: #fff5e6;
+}
+
+.hero-button {
+  padding: 12px 35px;
+
+  background-color: #f6dfbd;
+  border: 3px solid #bd452b;
+
+  color: #cf4e2e;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  box-shadow: 4px 5px 0 #9f3c29;
+}
+
+.hero-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 48px;
+
+  background-color: #f6dfbd;
+
+  background-image: linear-gradient(45deg, #cf4e2e 25%, transparent 25%, transparent 75%, #cf4e2e 75%), linear-gradient(45deg, #cf4e2e 25%, transparent 25%, transparent 75%, #cf4e2e 75%);
+
+  background-size: 48px 48px;
+
+  background-position:
+    0 0,
+    24px 24px;
+}
+/* =========================
+   HVAD ER INSTANT UGEN?
+========================= */
+
+.about {
+  min-height: 650px;
+
+  background-color: #f6dfbd;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 55px 70px 80px;
+}
+
+/* =========================
+   TEKST
+========================= */
+
+.about-text {
+  width: 55%;
+}
+
+.about-text h2 {
+  margin: 0 0 60px;
+
+  font-size: 48px;
+  color: #cf4e2e;
+}
+
+.about-text p {
+  margin: 0 0 28px;
+
+  font-size: 20px;
+  line-height: 1.35;
+
+  color: #111;
+}
+
+/* =========================
+   BILLEDER
+========================= */
+
+.about-images {
+  position: relative;
+
+  width: 40%;
+  min-height: 570px;
+}
+
+/* BEGGE BILLEDER */
+
+.polaroid {
+  position: absolute;
+  display: block;
+}
+
+/* ØVERSTE BILLEDE */
+
+.polaroid-one {
+  width: 330px;
+
+  top: 0;
+  left: 10px;
+
+  z-index: 1;
+}
+
+/* NEDERSTE BILLEDE */
+
+.polaroid-two {
+  width: 310px;
+
+  top: 275px;
+  left: 190px;
+
+  transform: rotate(-7deg);
+
+  z-index: 2;
+}
+
+/* =========================
+   HVORFOR INSTANT FOTO?
+========================= */
+
+.history {
+  min-height: 750px;
+
+  background-color: #cf4e2e;
+
+  padding: 55px 80px 80px;
+
+  color: #f6dfbd;
+}
+
+/* OVERSKRIFT */
+
+.history h2 {
+  margin: 0 0 90px;
+
+  text-align: center;
+
+  font-size: 48px;
+  color: #f6dfbd;
+}
+
+/* =========================
+   INDHOLD
+========================= */
+
+.history-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  column-gap: 80px;
+  row-gap: 80px;
+
+  align-items: center;
+}
+
+/* =========================
+   1940
+========================= */
+.history-year {
+  font-family: Impact, "Arial Black", sans-serif;
+
+  font-size: 180px;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: 2px;
+
+  color: #f6dfbd;
+
+  -webkit-text-stroke: 2px white;
+
+  text-shadow:
+    7px 9px 0 #a9442d,
+    0 0 10px #f5a623;
+}
+
+/* =========================
+   TEKST
+========================= */
+
+.history-text-top,
+.history-text-bottom {
+  max-width: 550px;
+}
+
+.history-text-top p,
+.history-text-bottom p {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1.35;
+
+  color: #f6dfbd;
+}
+
+/* =========================
+   ILLUSTRATIONER
+========================= */
+
+.history-images {
+  position: relative;
+
+  height: 280px;
+}
+
+/* KAMERA */
+.history-camera {
+  position: absolute;
+
+  width: 430px;
+
+  top: -20px;
+  left: 0;
+
+  transform: rotate(-5deg);
+}
+
+/* SMÅ INSTANT BILLEDER */
+
+.history-photos {
+  position: absolute;
+
+  width: 190px;
+
+  top: 80px;
+  left: 270px;
+
+  transform: rotate(4deg);
+}
+/* =========================
+   FAKTA
+========================= */
+
+.facts {
+  min-height: 650px;
+  background-color: #f7b541;
+
+  padding: 45px 70px 60px;
+}
+
+/* OVERSKRIFT */
+
+.facts h2 {
+  margin: 0 0 70px;
+
+  text-align: center;
+
+  font-size: 48px;
+  color: #cf4e2e;
+}
+
+/* DE TRE GRAFIKKER */
+
+.facts-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+/* HVER GRAFIK */
+
+.fact-item {
+  width: 28%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-item img {
+  width: 100%;
+  max-width: 310px;
+  height: auto;
+}
+
+/* LODRETTE STREGER */
+
+.fact-line {
+  width: 2px;
+  height: 245px;
+
+  background-color: #cf4e2e;
+}
+/* =========================
+   SÅDAN DELTAGER DU
+========================= */
+
+.participate {
+  min-height: 800px;
+  background-color: #f6dfbd;
+
+  padding: 45px 55px 80px;
+}
+
+/* OVERSKRIFT */
+
+.participate > h2 {
+  margin: 0 0 55px;
+
+  text-align: center;
+
+  font-size: 48px;
+  color: #cf4e2e;
+}
+
+/* =========================
+   BILLEDE + SEDDEL
+========================= */
+
+.participate-content {
+  position: relative;
+
+  max-width: 1250px;
+  margin: 0 auto;
+
+  min-height: 650px;
+}
+
+/* STORT BILLEDE */
+
+.participate-image {
+  display: block;
+
+  width: 78%;
+  height: 610px;
+
+  object-fit: cover;
+}
+
+/* =========================
+   GUL SEDDEL
+========================= */
+
+.participate-note {
+  position: absolute;
+
+  width: 480px;
+
+  top: 90px;
+  right: 0;
+
+  padding: 38px 42px 40px;
+
+  background-color: #fff9ad;
+
+  box-sizing: border-box;
+
+  z-index: 2;
+}
+
+/* TAPE */
+
+.tape {
+  position: absolute;
+
+  width: 180px;
+  height: 45px;
+
+  top: -25px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(1deg);
+
+  background-color: rgba(235, 225, 205, 0.9);
+}
+
+/* OVERSKRIFT PÅ SEDDEL */
+
+.participate-note h3 {
+  margin: 0;
+
+  text-align: center;
+
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+
+  color: #111;
+}
+
+/* STREG */
+
+.note-line {
+  width: 100%;
+  height: 3px;
+
+  margin: 8px 0 22px;
+
+  background-color: #111;
+}
+
+/* INTRO */
+
+.participate-intro {
+  margin: 0 0 20px 35px;
+
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+/* =========================
+   TRIN 1-4
+========================= */
+
+.step {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.step span {
+  flex-shrink: 0;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background-color: #cf4e2e;
+  color: #f6dfbd;
+
+  font-size: 26px;
+}
+
+.step p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+/* =========================
+   KNAP
+========================= */
+
+.participate-button {
+  display: block;
+
+  width: fit-content;
+
+  margin: 30px auto 0;
+  padding: 10px 18px;
+
+  background-color: #fff;
+
+  border: 3px solid #cf4e2e;
+
+  color: #111;
+
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 20px;
+
+  text-decoration: none;
+
+  box-shadow: 4px 5px 0 #a9442d;
+}
+/* =========================
+   INSPIRATION / CAROUSEL
+========================= */
+
+.inspiration {
+  background-color: #cf4e2e;
+
+  padding: 40px 0 70px;
+
+  overflow: hidden;
+
+  text-align: center;
+}
+
+/* VINDUET SOM BILLEDERNE KØRER I */
+
+.carousel {
+  width: 100%;
+
+  overflow: hidden;
+
+  margin-bottom: 70px;
+}
+
+/* SELVE RÆKKEN MED BILLEDER */
+
+.carousel-track {
+  display: flex;
+
+  width: max-content;
+
+  animation: carousel-scroll 20s linear infinite;
+}
+
+/* BILLEDER */
+
+.carousel-track img {
+  width: 320px;
+  height: 365px;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+
+  display: block;
+
+  border-right: 3px solid #cf4e2e;
+}
+
+/* =========================
+   BEVÆGELSEN
+========================= */
+
+@keyframes carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   KNAP
+========================= */
+
+.inspiration-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background-color: #fff;
+
+  border: 3px solid #e1a638;
+
+  color: #111;
+
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 21px;
+
+  text-decoration: none;
+
+  box-shadow: 4px 5px 0 #a9442d;
+}
+
+/* UJÆVNE PAPIRKANTER */
+
+/* ========================================
+   MOBIL VERSION
+======================================== */
+
+@media (max-width: 600px) {
+  /* HERO */
+
+  .hero {
+    height: 430px;
+  }
+
+  .hero-content {
+    height: 300px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    -webkit-text-stroke: 2px #cf4e2e;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 9px 20px;
+  }
+
+  .hero-pattern {
+    height: 30px;
+    background-size: 30px 30px;
+    background-position:
+      0 0,
+      15px 15px;
+  }
+
+  /* =========================
+     HVAD ER INSTANT UGEN?
+  ========================= */
+
+  .about {
+    min-height: auto;
+    padding: 35px 25px 55px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    width: 100%;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .about-images {
+    width: 100%;
+    min-height: 380px;
+    margin-top: 30px;
+  }
+
+  .polaroid-one {
+    width: 210px;
+    top: 0;
+    left: 10px;
+  }
+
+  .polaroid-two {
+    width: 190px;
+    top: 175px;
+    left: 110px;
+  }
+
+  /* =========================
+     HVORFOR INSTANT FOTO?
+  ========================= */
+
+  .history {
+    min-height: auto;
+    padding: 40px 25px 55px;
+  }
+
+  .history h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+  }
+
+  .history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: stretch;
+  }
+
+  .history-text-top,
+  .history-text-bottom {
+    max-width: none;
+    width: 100%;
+  }
+
+  .history-text-top p,
+  .history-text-bottom p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .history-year {
+    order: 2;
+
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .history-text-top {
+    order: 1;
+  }
+
+  .history-text-bottom {
+    order: 3;
+  }
+
+  .history-images {
+    order: 4;
+
+    height: 220px;
+    width: 100%;
+  }
+
+  .history-camera {
+    width: 300px;
+    left: 50%;
+    top: 10px;
+
+    transform: translateX(-50%) rotate(-5deg);
+  }
+
+  /* =========================
+     FAKTA
+  ========================= */
+
+  .facts {
+    min-height: auto;
+    padding: 35px 15px 45px;
+  }
+
+  .facts h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+  }
+
+  .facts-content {
+    justify-content: space-between;
+  }
+
+  .fact-item {
+    width: 30%;
+  }
+
+  .fact-item img {
+    max-width: 110px;
+  }
+
+  .fact-line {
+    height: 120px;
+    width: 1px;
+  }
+
+  /* =========================
+     SÅDAN DELTAGER DU
+  ========================= */
+
+  .participate {
+    min-height: auto;
+    padding: 35px 15px 55px;
+  }
+
+  .participate > h2 {
+    margin-bottom: 30px;
+    font-size: 27px;
+  }
+
+  .participate-content {
+    min-height: 600px;
+  }
+
+  .participate-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .participate-note {
+    width: 85%;
+
+    top: 170px;
+    right: 50%;
+
+    transform: translateX(50%);
+
+    padding: 30px 25px;
+  }
+
+  .participate-note h3 {
+    font-size: 25px;
+  }
+
+  .participate-intro {
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .step {
+    margin-bottom: 12px;
+  }
+
+  .step span {
+    width: 28px;
+    height: 28px;
+
+    font-size: 18px;
+  }
+
+  .step p {
+    font-size: 11px;
+  }
+
+  .participate-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* =========================
+     INSPIRATION / CAROUSEL
+  ========================= */
+
+  .inspiration {
+    padding: 25px 0 40px;
+  }
+
+  .carousel {
+    margin-bottom: 35px;
+  }
+
+  .carousel-track img {
+    width: 145px;
+    height: 180px;
+  }
+
+  .inspiration-button {
+    font-size: 15px;
+    padding: 9px 13px;
+  }
 }
