@@ -1,32 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="konkurrence.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="konkurrence.css">
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="grafik/logo.png" alt="logo">
-            </a>
+      <div class="header-logo">
+        <img src="grafik/logo.png" alt="Instant Ugen" />
+      </div>
+
+      <nav class="header-nav">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+      </nav>
+
+      <a href="info.html" class="info-button">INFO</a>
+
+      <!-- BURGER -->
+      <button class="burger" id="burger" aria-label="Åbn menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MOBILE MENU -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+        <a href="info.html">INFO</a>
+      </nav>
+    </header>
+
+    <div class="section-line2"></div>
+    <main>
+      <section class="competition-section">
+        <h1>Konkurrence</h1>
+
+        <p class="intro">
+          Instant Ugen var noget af en succes med over 784 bidrag. Så det var ikke nemt at finde en vinder.<br />
+          Efter et par lange, men spændende dage, blev dommerne enige om vinderen og de 6 nominerede.
+        </p>
+
+        <div class="competition-image">
+          <img src="image/konkurrenceboks.png" alt="Information om deltagere, Instax Mini og antal indsendte instants" />
+        </div>
+        <div class="section-line"></div>
+      </section>
+      <section class="winner">
+        <h2>Vinderen</h2>
+
+        <div class="winner-star">
+          <svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+            <polygon
+              points="
+          400,10
+          492,264
+          780,264
+          547,410
+          620,650
+          400,505
+          180,650
+          253,410
+          20,264
+          308,264
+        "
+              fill="#F9B640"
+              stroke="#D94C2F"
+              stroke-width="2"
+            />
+          </svg>
         </div>
 
+        <div class="polaroid">
+          <img src="image/billede4.webp" alt="Vinderfoto" />
+        </div>
 
-        <nav class="header-nav">
-            <a class="menu1" href="instants.html">DINE INSTANTS</a>
-            <a class="menu1" href="konkurrence.html">KONKURRENCE</a>
+        <div class="winner-text">
+          <p>
+            <strong>03 - Amager Strand</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            Fra denne vinkel ligner København en storby. Taget med et Polaroid Now+ Gen 2, med et gult filter.
+          </p>
+        </div>
+      </section>
+      <section class="nominerede">
+        <div class="nominerede-header">
+          <h2>De nominerede</h2>
+        </div>
 
-        </nav>
+        <!-- 1 -->
+        <div class="nomineret række-rosa">
+          <div class="nomineret-tekst">
+            <strong>08 - Karlstrup & kaffe</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            Den smukke natur i en tidligere kalkgrav med et twist af kaffe. Polaroidet blev lagt i blød i kaffe i et par uger. Det gav en flot kulør. Kamera: Polaroid-flip.
+          </div>
 
+          <div class="polaroid">
+            <img src="image/img6.webp" alt="Karlstrup & kaffe" />
+          </div>
+        </div>
 
+        <!-- 2 -->
+        <div class="nomineret række-gul">
+          <div class="polaroid">
+            <img src="image/img8.webp" alt="Amager Fælled" />
+          </div>
 
-        <a href="info.html" class="info-button">INFO</a>
-    </header>
-</body>
+          <div class="nomineret-tekst">
+            <strong>01 - Amager Fælled</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            Et lille snapshot fra Amager Fælled, en stor skov i den sydvestlige del af København, Danmark. Taget med et Lomomatic Square.
+          </div>
+        </div>
 
+        <!-- 3 -->
+        <div class="nomineret række-rosa">
+          <div class="nomineret-tekst">
+            <strong>05 - 2 x Ørestad</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            En dobbelteksponering fra mit nabolag, Ørestad. Taget med et Lomomatic Square.
+          </div>
+
+          <div class="polaroid">
+            <img src="image/img3.webp" alt="2 x Ørestad" />
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="nomineret række-gul">
+          <div class="polaroid">
+            <img src="image/img12.webp" alt="Amager Forbrænding" />
+          </div>
+
+          <div class="nomineret-tekst">
+            <strong>02 - Amager Forbrænding</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            Jeg ville give min højre arm for en smøg. Taget med et Lomomatic Square.
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="nomineret række-rosa">
+          <div class="nomineret-tekst">
+            <strong>06 - Laserup Strand</strong><br />
+            <strong>Navn:</strong> Stefan Grage<br />
+            <strong>Beskrivelse/historien bag:</strong>
+            For koldt til at tage en dukkert. Så jeg tog et billede i stedet. Polaroidet gav et forfærdeligt magenta farveskær, men jeg endte med at kunne lide det. Taget med et Polaroid Now+ gen 2 og en i-Type-film, som jeg sandsynligvis opbevarede
+            forkert.
+          </div>
+
+          <div class="polaroid">
+            <img src="image/img2.webp" alt="Laserup Strand" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="konkurrence.js"></script>
+  </body>
 </html>

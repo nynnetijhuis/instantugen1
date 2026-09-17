@@ -1,32 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="info.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="info.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="grafik/logo.png" alt="logo">
-            </a>
+      <div class="header-logo">
+        <img src="grafik/logo.png" alt="Instant Ugen" />
+      </div>
+
+      <nav class="header-nav">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+      </nav>
+
+      <a href="info.html" class="info-button">INFO</a>
+
+      <!-- BURGER -->
+      <button class="burger" id="burger" aria-label="Åbn menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MOBILE MENU -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="instants.html">DINE INSTANTS</a>
+        <a href="konkurrence.html">KONKURRENCE</a>
+        <a href="info.html">INFO</a>
+      </nav>
+    </header>
+
+    <div class="section-line2"></div>
+    <main>
+      <section>
+        <div class="hero">
+          <div class="hero-circle"></div>
+          <h1>Information</h1>
+        </div>
+        <img class="tern" src="image/tern4.png" alt="Information" />
+      </section>
+      <section class="about">
+        <div class="about-text">
+          <h2>Hvem er vi?</h2>
+
+          <p>Instant Ugen er et lille projekt, der drives af et par undervisere fra Multimediedesignuddannelsen på EK - Erhvervsakademi København.</p>
+
+          <p>Instant Ugen er et halvårligt projekt, hvor undervisere og studerende samarbejder om et digitalt design- og kommunikationsprojekt relateret til Instant Ugen-konkurrencen (denne hjemmeside).</p>
+
+          <p>I bund og grund ønsker vi bare at promovere instant fotografien og have det sjovt, mens vi gør det :-)</p>
         </div>
 
+        <div class="about-images">
+          <img src="image/img13.webp" alt="Fotografier" />
 
-        <nav class="header-nav">
-            <a class="menu1" href="instants.html">DINE INSTANTS</a>
-            <a class="menu1" href="konkurrence.html">KONKURRENCE</a>
+          <img src="image/img14.webp" alt="Fotografi" />
+        </div>
+      </section>
 
-        </nav>
+      <!-- DOMMERE -->
+      <section class="judges">
+        <div class="judge-images">
+          <img src="image/Group11.png" alt="Dommerne" />
+        </div>
 
+        <div class="judge-content">
+          <h2>Dommere</h2>
 
+          <p>Bidrag vil blive bedømt af:</p>
 
-        <a href="info.html" class="info-button">INFO</a>
-    </header>
-</body>
+          <ul>
+            <li>Jonas Hasle (Adjunkt, Multimediedesign på EK)</li>
+            <li>Anders Dollerup (Lektor, Multimediedesign på EK)</li>
+            <li>Birgitte Heide (Lektor, Multimediedesign på EK)</li>
+            <li>Stefan Grage (Lektor, Multimediedesign på EK)</li>
+            <li>Studerende på Digital Design Valgfaget på Lektor, Multimediedesign på EK</li>
+          </ul>
+        </div>
+        <div class="judge-mobile">
+          <img src="image/personermobile.png" alt="Dommerne" />
+        </div>
 
+        <div class="camera">
+          <img src="image/kameraudskriv.png" alt="Dommerne" />
+        </div>
+      </section>
+
+      <!-- FILMSTRIBE -->
+      <div class="filmstrip">
+        <img src="image/Filmrullebillede.png" alt="" />
+      </div>
+
+      <!-- SPONSORER -->
+      <section class="sponsors">
+        <div class="week">
+          <img src="image/22_Inspiration_papir 1.png" alt="" />
+        </div>
+
+        <div class="sponsor-text">
+          <h2>Sponsorer</h2>
+
+          <p>Instant Ugen er ikke relateret til nogen virksomheder inden for Instant foto-branchen.</p>
+
+          <p>Den eneste organisation, der støtter os, er EK - Erhvervsakademi København. I hvert fald indtil videre :-)</p>
+        </div>
+
+        <div class="ek">
+          <img src="image/EKbillede.png" alt="EK - Erhvervsakademi København" />
+        </div>
+      </section>
+    </main>
+    <script src="konkurrence.js"></script>
+  </body>
 </html>
